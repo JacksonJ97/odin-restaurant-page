@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  padding: 2.5em 0;
+}
+
+nav {
+  width: 80%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header ul li {
+  margin-right: 0.25em;
+  cursor: pointer;
+}
+
+header ul li:hover {
+  color: #91a4a2;
+}
+
+/*------------------*/
+/*     HOME TAB     */
+/*------------------*/
+
+h1 {
+  font-size: 2.5rem;
+  color: #446865;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+main p {
+  text-align: center;
+}
+
+main img {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 3em auto;
+}
+
+@media (min-width: 1200px) {
+  main {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  main img {
+    margin: 6em 0;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}
