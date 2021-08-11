@@ -87,10 +87,11 @@ const createMenuSection = () => {
 };
 
 const loadMenuPage = () => {
-  const contentDiv = document.getElementById("content");
+  const main = document.getElementById("main");
+  main.textContent = "";
   const menuSection = createMenuSection();
 
-  contentDiv.append(menuSection);
+  main.append(menuSection);
 };
 
 export default loadMenuPage;

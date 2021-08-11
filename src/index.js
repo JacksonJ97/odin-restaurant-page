@@ -1,7 +1,3 @@
-import loadHeader from "./header";
-import loadHomePage from "./home";
-import loadMenuPage from "./menu";
+import initializeWebsite from "./website";
 
-loadHeader();
-// loadHomePage();
-loadMenuPage();
+initializeWebsite();

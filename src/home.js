@@ -1,11 +1,12 @@
-const createMainDiv = () => {
-  const main = document.createElement("main");
+const createHomeSection = () => {
+  const homeSection = document.createElement("section");
   const container = document.createElement("div");
   const h1 = document.createElement("h1");
   const p = document.createElement("p");
   const img = document.createElement("img");
 
   container.classList.add("container");
+  homeSection.classList.add("home-section");
   img.src = "images/tea.jpg";
   img.alt = "Cup of tea";
 
@@ -14,17 +15,18 @@ const createMainDiv = () => {
 
   container.append(h1);
   container.append(p);
-  main.append(img);
-  main.append(container);
+  homeSection.append(img);
+  homeSection.append(container);
 
-  return main;
+  return homeSection;
 };
 
 const loadHomePage = () => {
-  const contentDiv = document.getElementById("content");
-  const main = createMainDiv();
+  const main = document.getElementById("main");
+  main.textContent = "";
+  const homeSection = createHomeSection();
 
-  contentDiv.append(main);
+  main.append(homeSection);
 };
 
 export default loadHomePage;
