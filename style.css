@@ -51,11 +51,11 @@ h1 {
   margin-bottom: 0.5em;
 }
 
-main p {
+.home-section p {
   text-align: center;
 }
 
-main img {
+.home-section img {
   display: block;
   width: 100%;
   max-width: 800px;
@@ -63,7 +63,7 @@ main img {
 }
 
 @media (min-width: 1200px) {
-  main {
+  .home-section {
     display: flex;
     align-items: center;
     gap: 24px;
@@ -71,7 +71,7 @@ main img {
     margin: 0 auto;
   }
 
-  main img {
+  .home-section img {
     margin: 6em 0;
   }
 
