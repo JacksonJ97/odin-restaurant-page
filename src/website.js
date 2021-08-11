@@ -1,5 +1,6 @@
 import loadHomePage from "./home";
 import loadMenuPage from "./menu";
+import loadContactPage from "./contact";
 
 const createNav = () => {
   const nav = document.createElement("nav");
@@ -60,8 +61,8 @@ const initializeWebsite = () => {
   const main = document.createElement("main");
   main.id = "main";
 
-  // contentDiv.append(header);
-  // contentDiv.append(main);
+  contentDiv.append(header);
+  contentDiv.append(main);
   setActiveButton(document.querySelector(".nav-button"));
   loadHomePage();
 };
@@ -70,7 +71,7 @@ const setActiveButton = (button) => {
   const navButtons = document.querySelectorAll(".nav-button");
 
   navButtons.forEach((button) => {
-    if (button !== this) {
+    if (button.classList.contains("active")) {
       button.classList.remove("active");
     }
   });
