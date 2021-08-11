@@ -30,7 +30,7 @@ const createNav = () => {
   contactTab.addEventListener("click", (e) => {
     if (e.target.classList.contains("active")) return;
     setActiveButton(contactTab);
-    // loadMenuPage();
+    loadContactPage();
   });
 
   ul.append(homeTab);
@@ -60,8 +60,8 @@ const initializeWebsite = () => {
   const main = document.createElement("main");
   main.id = "main";
 
-  contentDiv.append(header);
-  contentDiv.append(main);
+  // contentDiv.append(header);
+  // contentDiv.append(main);
   setActiveButton(document.querySelector(".nav-button"));
   loadHomePage();
 };
