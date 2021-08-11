@@ -83,6 +83,7 @@ h1 {
 /*------------------*/
 /*     MENU TAB     */
 /*------------------*/
+
 .menu-section {
   margin-top: 3em;
 }
@@ -107,11 +108,39 @@ h1 {
 }
 
 .menu-item {
-  background-color: white;
+  background-color: #dfdfdf;
   width: 80%;
   margin: 2em auto;
   padding-bottom: 2em;
   text-align: center;
   border-radius: 6px;
   box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+/*------------------*/
+/*     MENU TAB     */
+/*------------------*/
+
+.contact-section {
+  margin-top: 3em;
+}
+
+.contact-card {
+  background-color: #dfdfdf;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2em;
+  max-width: 600px;
+  border-radius: 6px;
+  box-shadow: 4px 8px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.contact-card p {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.contact-card img {
+  width: 100%;
+  border-radius: 6px;
 }
