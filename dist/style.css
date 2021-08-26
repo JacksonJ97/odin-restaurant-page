@@ -10,6 +10,10 @@ body {
   min-height: 100vh;
 }
 
+.active {
+  border-bottom: 1px solid black;
+}
+
 .container {
   width: 90%;
   margin: 0 auto;
