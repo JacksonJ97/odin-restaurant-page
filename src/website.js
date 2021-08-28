@@ -45,10 +45,23 @@ const createNav = () => {
 const createHeader = () => {
   const header = document.createElement("header");
   const container = document.createElement("div");
+  const companyLogo = document.createElement("div");
+  const companyText = document.createElement("p");
+  const companySlogan = document.createElement("p");
   const nav = createNav();
 
+  companyText.textContent = "Jack's Cafe";
+  companySlogan.textContent = "One sip at a time";
+
+  companyLogo.classList.add("company-logo");
+  companyText.classList.add("company-text");
+  companySlogan.classList.add("company-slogan");
   container.classList.add("container");
 
+  companyLogo.append(companyText);
+  companyLogo.append(companySlogan);
+
+  container.append(companyLogo);
   container.append(nav);
   header.append(container);
 

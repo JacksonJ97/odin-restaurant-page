@@ -8,10 +8,16 @@
 body {
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
+  background-color: #0e191d;
+  color: #d3d3d3;
 }
 
 .active {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.active:hover {
+  border-bottom: 1px solid #d1b48c;
 }
 
 .container {
@@ -20,13 +26,32 @@ body {
 }
 
 header {
-  padding: 2.5em 0;
+  padding: 1em 0;
+  background-color: #2f4f4e;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company-logo {
+  line-height: 1.1;
+}
+
+.company-text {
+  font-family: "Mansalva", cursive;
+  font-size: 2rem;
+}
+
+.company-slogan {
+  font-family: "Lily Script One", cursive;
+  color: #d1b48c;
 }
 
 nav {
-  width: 80%;
-  max-width: 500px;
-  margin: 0 auto;
+  width: 50%;
 }
 
 header ul {
@@ -41,7 +66,13 @@ header ul li {
 }
 
 header ul li:hover {
-  color: #91a4a2;
+  color: #d1b48c;
+}
+
+@media (min-width: 1200px) {
+  nav {
+    width: 30%;
+  }
 }
 
 /*------------------*/
@@ -50,7 +81,7 @@ header ul li:hover {
 
 h1 {
   font-size: 2.5rem;
-  color: #446865;
+  color: #d1b48c;
   text-align: center;
   margin-bottom: 0.5em;
 }
@@ -64,6 +95,7 @@ h1 {
   width: 100%;
   max-width: 800px;
   margin: 0 auto 3em auto;
+  box-shadow: 8px 8px 12px 0px rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: 1200px) {
@@ -88,12 +120,16 @@ h1 {
 /*     MENU TAB     */
 /*------------------*/
 
-.menu-section {
-  margin-top: 3em;
+h2 {
+  margin: 1em 0;
+  text-align: center;
+  font-size: 3rem;
+  color: #d1b48c;
+  font-family: "Mansalva", cursive;
 }
 
 .menu-card {
-  background-color: #dfdfdf;
+  background-color: #2f4f4e;
   width: 90%;
   max-width: 590px;
   margin: 0 auto;
@@ -122,29 +158,44 @@ h1 {
 }
 
 /*------------------*/
-/*     MENU TAB     */
+/*     CONTACT TAB     */
 /*------------------*/
 
-.contact-section {
-  margin-top: 3em;
-}
-
 .contact-card {
-  background-color: #dfdfdf;
+  background-color: #2f4f4e;
   width: 90%;
   margin: 0 auto;
   padding: 2em;
-  max-width: 600px;
+  max-width: 1100px;
   border-radius: 6px;
   box-shadow: 4px 8px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
-.contact-card p {
-  text-align: center;
-  margin-bottom: 1em;
+.contact-link {
+  display: flex;
+  align-items: center;
+  white-space: pre;
+  margin-bottom: 2em;
 }
 
-.contact-card img {
-  width: 100%;
+.contact-link p {
+  margin-left: 1em;
+}
+
+iframe {
+  width: calc(100%);
+  border: 0;
   border-radius: 6px;
+}
+
+@media (min-width: 1100px) {
+  .contact-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .contact-text-container {
+    margin-right: 4em;
+  }
 }

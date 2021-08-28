@@ -79,8 +79,13 @@ const createMenuCard = () => {
 const createMenuSection = () => {
   const menuSection = document.createElement("section");
   const menuCard = createMenuCard();
+  const menuTitle = document.createElement("h2");
 
   menuSection.classList.add("menu-section");
+
+  menuTitle.textContent = "Menu";
+
+  menuSection.append(menuTitle);
   menuSection.append(menuCard);
 
   return menuSection;
