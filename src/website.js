@@ -53,7 +53,9 @@ const createNav = () => {
 
   window.addEventListener("resize", () => {
     if (document.body.clientWidth > 780) {
-      ul.classList.remove("show");
+      if (ul.classList.contains("show")) {
+        ul.classList.remove("show");
+      }
     }
 
     if (document.body.clientWidth < 800) {
