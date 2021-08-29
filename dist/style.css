@@ -86,6 +86,12 @@ h1 {
   margin-bottom: 0.5em;
 }
 
+.home-section {
+  height: calc(100vh - 84px);
+  background: url("images/tea.jpg") no-repeat center fixed;
+  background-size: cover;
+}
+
 .home-section p {
   text-align: center;
 }
@@ -99,18 +105,6 @@ h1 {
 }
 
 @media (min-width: 1200px) {
-  .home-section {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    width: 90%;
-    margin: 0 auto;
-  }
-
-  .home-section img {
-    margin: 6em 0;
-  }
-
   h1 {
     font-size: 4rem;
   }
@@ -121,7 +115,7 @@ h1 {
 /*------------------*/
 
 h2 {
-  margin: 1em 0;
+  margin: 0.5em 0;
   text-align: center;
   font-size: 3rem;
   color: #d1b48c;
@@ -171,11 +165,20 @@ h2 {
   box-shadow: 4px 8px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
+.contact-text-container {
+  width: 236px;
+  margin: 0 auto;
+}
+
 .contact-link {
   display: flex;
   align-items: center;
   white-space: pre;
   margin-bottom: 2em;
+}
+
+i {
+  font-size: 1.25rem;
 }
 
 .contact-link p {

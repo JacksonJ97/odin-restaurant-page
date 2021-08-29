@@ -1,20 +1,21 @@
 const createContactLinks = () => {
   const addressLink = document.createElement("div");
   const address = document.createElement("p");
-  const addressIcon = document.createElement("img");
-  const telephoneLink = document.createElement("div");
-  const telephone = document.createElement("p");
-  const telephoneIcon = document.createElement("img");
+  const addressIcon = document.createElement("i");
   const openHoursLink = document.createElement("div");
   const openHours = document.createElement("p");
-  const clockIcon = document.createElement("img");
+  const clockIcon = document.createElement("i");
+  const telephoneLink = document.createElement("div");
+  const telephone = document.createElement("p");
+  const telephoneIcon = document.createElement("i");
 
   addressLink.classList.add("contact-link");
 
   address.textContent = "163 King St E \r\n";
   address.textContent += "Toronto, ON M5A 1J4";
 
-  addressIcon.src = "images/location-icon.png";
+  addressIcon.classList.add("fas");
+  addressIcon.classList.add("fa-map-marker-alt");
 
   addressLink.append(addressIcon);
   addressLink.append(address);
@@ -24,7 +25,8 @@ const createContactLinks = () => {
   openHours.textContent = "Mon - Thurs: 11am - 9pm \r\n";
   openHours.textContent += "Fri - Sun: 11am - 8pm";
 
-  clockIcon.src = "images/clock-icon.png";
+  clockIcon.classList.add("fas");
+  clockIcon.classList.add("fa-clock");
 
   openHoursLink.append(clockIcon);
   openHoursLink.append(openHours);
@@ -33,7 +35,8 @@ const createContactLinks = () => {
 
   telephone.textContent = "(123)-456-789";
 
-  telephoneIcon.src = "images/telephone-icon.png";
+  telephoneIcon.classList.add("fas");
+  telephoneIcon.classList.add("fa-phone-alt");
 
   telephoneLink.append(telephoneIcon);
   telephoneLink.append(telephone);
