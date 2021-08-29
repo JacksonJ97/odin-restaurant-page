@@ -79,34 +79,47 @@ header ul li:hover {
 /*     HOME TAB     */
 /*------------------*/
 
-h1 {
-  font-size: 2.5rem;
-  color: #d1b48c;
-  text-align: center;
-  margin-bottom: 0.5em;
-}
-
 .home-section {
   height: calc(100vh - 84px);
   background: url("images/tea.jpg") no-repeat center fixed;
   background-size: cover;
 }
 
-.home-section p {
+h1 {
+  font-size: clamp(1.75rem, 4.5vw, 4rem);
+  color: #d1b48c;
+  text-align: center;
+  padding-top: 0.5em;
+}
+
+.subtitle {
+  font-size: clamp(0.8125rem, 2vw, 1.25rem);
   text-align: center;
 }
 
-.home-section img {
-  display: block;
-  width: 100%;
+.contact-info-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 6px;
   max-width: 800px;
-  margin: 0 auto 3em auto;
-  box-shadow: 8px 8px 12px 0px rgba(0, 0, 0, 0.3);
+  height: 250px;
+  margin: 12em auto 0 auto;
+  padding: 2em 3em;
 }
 
-@media (min-width: 1200px) {
-  h1 {
-    font-size: 4rem;
+.wrapper {
+  width: 236px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1000px) {
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.25rem;
+    width: 100%;
+    margin: 0;
+    margin-top: 2.5em;
   }
 }
 
@@ -119,7 +132,6 @@ h2 {
   text-align: center;
   font-size: 3rem;
   color: #d1b48c;
-  font-family: "Mansalva", cursive;
 }
 
 .menu-card {
@@ -141,6 +153,10 @@ h2 {
   border-radius: 6px 6px 0 0;
 }
 
+.menu-card p {
+  color: #0e191d;
+}
+
 .menu-item {
   background-color: white;
   width: 80%;
@@ -151,9 +167,9 @@ h2 {
   box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
-/*------------------*/
-/*     CONTACT TAB     */
-/*------------------*/
+/*-------------------*/
+/*    CONTACT TAB    */
+/*-------------------*/
 
 .contact-card {
   background-color: #2f4f4e;
