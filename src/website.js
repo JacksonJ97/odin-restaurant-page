@@ -51,6 +51,18 @@ const createNav = () => {
     }
   });
 
+  window.addEventListener("resize", () => {
+    if (document.body.clientWidth > 780) {
+      ul.classList.remove("show");
+    }
+
+    if (document.body.clientWidth < 800) {
+      if (hamburgerMenu.classList.contains("open")) {
+        ul.classList.add("show");
+      }
+    }
+  });
+
   homeTab.addEventListener("click", (e) => {
     if (e.target.classList.contains("active")) return;
     setActiveButton(homeTab);
