@@ -13,6 +13,7 @@ const createContactLinks = () => {
 
   address.textContent = "163 King St E \r\n";
   address.textContent += "Toronto, ON M5A 1J4";
+  address.style.marginLeft = "21px";
 
   addressIcon.classList.add("fas");
   addressIcon.classList.add("fa-map-marker-alt");

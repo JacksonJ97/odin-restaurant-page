@@ -1,5 +1,7 @@
 const createContactInfo = () => {
   const contactInfoDiv = document.createElement("div");
+  const title = document.createElement("h1");
+  const subtitle = document.createElement("p");
   const addressDiv = document.createElement("div");
   const address = document.createElement("p");
   const addressIcon = document.createElement("i");
@@ -8,9 +10,13 @@ const createContactInfo = () => {
   const clockIcon = document.createElement("i");
   const wrapper = document.createElement("div");
 
+  subtitle.classList.add("subtitle");
   wrapper.classList.add("wrapper");
   contactInfoDiv.classList.add("contact-info-container");
   addressDiv.classList.add("contact-link");
+
+  title.textContent = "Welcome to our cafe!";
+  subtitle.textContent = "Drinks crafted with organic ingredients. No artificial colouring or flavours.";
 
   address.textContent = "163 King St E \r\n";
   address.textContent += "Toronto, ON M5A 1J4";
@@ -34,6 +40,8 @@ const createContactInfo = () => {
 
   wrapper.append(addressDiv);
   wrapper.append(openHoursDiv);
+  contactInfoDiv.append(title);
+  contactInfoDiv.append(subtitle);
   contactInfoDiv.append(wrapper);
 
   return contactInfoDiv;
@@ -43,18 +51,10 @@ const createHomeSection = () => {
   const homeSection = document.createElement("section");
   const contactInfo = createContactInfo();
   const container = document.createElement("div");
-  const h1 = document.createElement("h1");
-  const p = document.createElement("p");
 
   container.classList.add("container");
   homeSection.classList.add("home-section");
-  p.classList.add("subtitle");
 
-  h1.textContent = "Welcome to our cafe!";
-  p.textContent = "Drinks crafted with organic ingredients. No artificial colouring or flavours.";
-
-  container.append(h1);
-  container.append(p);
   container.append(contactInfo);
   homeSection.append(container);
 

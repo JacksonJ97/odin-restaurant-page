@@ -28,6 +28,11 @@ const createMenuItems = () => {
   const earlGreyTeaTitle = document.createElement("p");
   const milkTeaTitle = document.createElement("p");
 
+  greenTeaTitle.classList.add("tea-title");
+  blackTeaTitle.classList.add("tea-title");
+  earlGreyTeaTitle.classList.add("tea-title");
+  milkTeaTitle.classList.add("tea-title");
+
   greenTeaTitle.textContent = "Green Tea";
   blackTeaTitle.textContent = "Black Tea";
   earlGreyTeaTitle.textContent = "Earl Grey Tea";
