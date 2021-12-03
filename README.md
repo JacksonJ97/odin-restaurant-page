@@ -19,4 +19,4 @@ In this project, I learned how to use the import and export syntax so that I can
 
 ### Live URL
 
-https://jacksonj97.github.io/odin-restaurant-page/
+https://jacksonj97.github.io/restaurant-page/
