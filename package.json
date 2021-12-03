@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JacksonJ97/odin-restaurant-page.git"
+    "url": "git+https://github.com/JacksonJ97/restaurant-page.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JacksonJ97/odin-restaurant-page/issues"
+    "url": "https://github.com/JacksonJ97/restaurant-page/issues"
   },
-  "homepage": "https://github.com/JacksonJ97/odin-restaurant-page#readme",
+  "homepage": "https://github.com/JacksonJ97/restaurant-page#readme",
   "devDependencies": {
     "webpack": "^5.49.0",
     "webpack-cli": "^4.7.2",
